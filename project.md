@@ -1,7 +1,7 @@
 # Project related to Javascript Programming
 
 ## Project Link 
-# Switch Color Project files Link :
+# Switch Color Project files Link:
 [Click here] (https://github.com/rangaomkaram/JavaScript_Basic_Projects/tree/main/SWITCHCOLORS))
 
 
