@@ -106,3 +106,13 @@ form.addEventListener('submit',function(ev){
 });
 
 ```
+
+# Project -3
+## Digital Clock
+
+```javascript
+
+console.log("Digital Clock");
+
+
+```
