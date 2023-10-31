@@ -5,8 +5,8 @@
   body {
     margin: 0;
     font-family: system-ui, sans-serif;
-    color: #000000;
-    background-color: #1b1b1b;
+    color: #c5c2c2;
+    background-color: #3a3939;
   }
   
   nav {
@@ -28,7 +28,7 @@
     border: solid 1px rgb(22, 22, 22);
     text-align: center;
     text-decoration: none;
-    color: #1b1b1b;
+    color: #333232;
   }
   
   
@@ -39,7 +39,7 @@
   
   nav a[target = "_blank"]{
     background-color: rgb(149,53,250);
-    color : #FFFFFF
+    color : #FFFFFF;
   }
   
   

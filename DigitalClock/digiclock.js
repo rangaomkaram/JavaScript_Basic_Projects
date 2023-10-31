@@ -1,6 +1,11 @@
 const clock = document.querySelector('#digiclock');
 
-let date = new Date();
-console.log(date.toLocaleTimeString());
+
+
+setInterval(function(){
+    let date = new Date();
+    clock.innerHTML = date.toLocaleTimeString();
+    
+},1000)
 
 
