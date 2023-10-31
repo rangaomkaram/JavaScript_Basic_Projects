@@ -3,10 +3,12 @@
   }
   
   body {
-    margin: 0;
-    font-family: system-ui, sans-serif;
-    color: #000000;
-    background-color: #FFFFFF;
+    width: 300px;
+    max-width: 750px;
+    min-width: 480px;
+    margin: 0 auto;
+    background-color: #575656;
+    color:#fff;
   }
   
   nav {
