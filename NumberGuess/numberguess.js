@@ -80,7 +80,7 @@ function checkGuessNum(guess){
 
 //Display the guess number
 
-function guessNum(){
+function guessNum(guess){
     userInput.value = '' // clean the input 
     preGuessSlot.innerHTML += `${guess}, `;      // adding the preguess number 
     numGuess++;
