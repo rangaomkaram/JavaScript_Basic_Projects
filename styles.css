@@ -35,9 +35,13 @@
   
   nav a[aria-current='page'] {
     color: #000;
-    background-color: #d4d4d4;
+    background-color: #438cf3;
   }
-  
+  nav a[target = "_blank"]{
+    background-color: #438cf3;
+    color : #0b0000;
+  }
+
   main {
     padding: 1rem;
   }
