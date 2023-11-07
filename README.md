@@ -1,9 +1,10 @@
 # JavaScript_Basic_Projects
 ## Revising the Projects
 
-# Solution Code for javascript
+# Source Code for javascript
 ## Manipulate the tags/elements in HTML and CSS using JavaScript
 # Project 1
+
 ```javascript
 console.log("Color changing of six Blocks");
 
@@ -65,7 +66,7 @@ Normal weight = 18.5–24.9
 Overweight = 25–29.9
 Obesity = BMI of 30 or greater
 
-# Solution code
+# source code
 
 ```javascript
 
@@ -110,6 +111,8 @@ form.addEventListener('submit',function(ev){
 # Project -3
 ## Digital Clock
 
+### Source Code of JS
+
 ```javascript
 
 console.log("Digital Clock");
@@ -126,6 +129,8 @@ setInterval(function(){
 
 # Project -4
 ## Guess the Number and Win! the Game
+
+### Source Code of JS
 
 ```javaScript 
 
@@ -257,6 +262,95 @@ function newGame(){
    });
 
 }
+
+
+```
+
+# Project 5
+## Random Color Generator 
+### Having BackGroung Light and Random
+
+### Source Code of JS
+
+```javaScript
+// Generating Random color
+
+function getRandomHexColor(){
+let HEX = "0123456789ABCDEF";
+let color = '#'
+let hexLength = 6
+
+for (let index = 0; index < hexLength ; index++) {
+    color += HEX[Math.floor(Math.random() * 16)];
+}
+return color;
+}
+
+let intervalId; // Global Declare
+
+// Starting the Back Ground Color
+const startColor = ()=>{
+    //Saftey check if intervalId is not null
+    if(!intervalId){ 
+    intervalId = setInterval(changeBgColor, 1000); 
+    }
+}
+
+//Changing the Background Color
+function changeBgColor() {
+    document.body.style.backgroundColor = getRandomHexColor();
+  }
+
+// To stop Color Changing Process
+const stopColor = ()=>{
+    clearInterval(intervalId);
+    // Make the intervalId null to reduce burden on  memory 
+    intervalId = null;
+}
+
+// DOM and EventListeners
+
+document.querySelector('#start').addEventListener('click',startColor)
+document.querySelector("#stop").addEventListener('click',stopColor)
+
+// Get Random Lightcolor 
+//I needed to generate only light colours (for backgrounds), so I went with three letter (#AAA) format:
+
+function randomLightColor(){
+    let smallHex = "ABCD".split('');
+    let lightColor = "#"
+    let smallHexLen = 3
+
+    for (let index = 0; index < smallHexLen; index++) {
+        lightColor += smallHex[Math.floor(Math.random() * smallHex.length)];
+        
+    }
+    return lightColor;
+}
+
+let intervalLC;
+
+const startLightColor = ()=>{
+    if(!intervalLC){
+        intervalLC = setInterval(changeBgLightColor, 1000);
+    }
+}
+
+function changeBgLightColor(){
+    document.body.style.backgroundColor = randomLightColor();
+}
+
+const stopLightColor = ()=>{
+    clearInterval(intervalLC);
+    intervalLC = null;
+}
+
+document.querySelector('#lightstart').addEventListener('click',startLightColor)
+document.querySelector('#lightstop').addEventListener('click',stopLightColor)
+
+
+
+//use RGB to have 
 
 
 ```
